@@ -1,0 +1,136 @@
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+
+  
+  /* Style pour l'en-tête */
+  h1 {
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  #sentence, #explanation {
+    display: flex;
+    width:500px;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Ajoutez une marge pour espacer le contenu du haut et du bas */
+  }
+  
+  /* Style pour le conteneur du défi */
+  #challengeContainer {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style pour le bouton Commencer le défi */
+  #startButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #06780d;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Style pour le formulaire */
+  form {
+    margin: 0 auto;
+    text-align: center; /* Centrer le contenu du formulaire */
+    margin-bottom: 20px; /* Espacement entre le formulaire et les boutons */
+  }
+
+form textarea{
+    Font-family: 'Fira Code'; 
+    width:300px;
+    font-size: medium;
+    height:auto;
+
+}
+
+#correctAnswer2{
+    Font-family: 'Fira Code'; 
+    width:300px;
+    height:auto;
+}
+
+form label {
+    font-family: 'Fira Code'; 
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  
+
+  
+  /* Style pour les boutons */
+  #buttons {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #buttons button,
+  #buttons input[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  #buttonSubmit {
+    background-color: #06780d;
+  }
+
+  #buttonReset {
+    background-color: #b30c0c;
+  }
+  
+  /* Style pour le timer */
+  #timer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Style pour la zone de résultat */
+  #result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Style pour les messages de résultat */
+  #resultText {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le texte d'explication */
+  #explanation {
+    margin-top: 10px;
+  }
+  
+
+  @media screen and (max-width: 900px) {
+
+
+
+  }
