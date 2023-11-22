@@ -8,8 +8,8 @@ try {
     if ($challengeData) {
       $sentence = htmlspecialchars($challengeData['sentence']);
       $questCode = htmlspecialchars($challengeData['quest_code']);
-      $correctAnswer = htmlspecialchars($challengeData['code_answer']);
-      $explication = $challengeData['explication'];
+      $correctAnswer = $challengeData['code_answer'];
+      $explication = htmlspecialchars($challengeData['explication']);
       $time = $challengeData['time'];
       $htmlcss = $challengeData['HTMLCSS'];
     } else {
