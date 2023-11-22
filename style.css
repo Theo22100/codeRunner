@@ -1,136 +1,181 @@
-/* Style pour le corps de la page */
+@media screen and (max-width: 1000px) {
+  #sentence{
+    font-size: 30px !important;
+  }
+  #result{
+    font-size: 30px !important;
+  }
+
+  h2{
+    font-size: 28px !important;
+  }
+  #timer{
+    font-size: 26px !important;
+  }
+  form label {
+  font-size:28px !important;
+}
+  
+
+  #resultText{
+    font-size: 24px !important;
+  }
+  #correctAnswer2 {
+    font-size: 20px !important;
+  }
+
+  #startButton,#buttonSubmit,#buttonReset {
+    font-size: 30px !important;
+  }
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
+  font-family: Sora;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #E73E8D, #0094D9); 
+  color: #333;
+}
+
+#test {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000000;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px; 
+  margin: auto; 
+  box-sizing: border-box; 
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
 
 
-  
-  /* Style pour l'en-tête */
-  h1 {
-    text-align: center;
-    padding: 10px 0px;
-  }
 
-  #sentence, #explanation {
-    display: flex;
-    width:500px;
-    height:auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px auto; /* Ajoutez une marge pour espacer le contenu du haut et du bas */
-  }
-  
-  /* Style pour le conteneur du défi */
-  #challengeContainer {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style pour le bouton Commencer le défi */
-  #startButton {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #06780d;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  /* Style pour le formulaire */
-  form {
-    margin: 0 auto;
-    text-align: center; /* Centrer le contenu du formulaire */
-    margin-bottom: 20px; /* Espacement entre le formulaire et les boutons */
-  }
+h2 {
+  text-align: center;
+  padding: 10px 0px;
+  font-family: 'Press Start 2P';
+}
+
+#sentence, #explanation {
+  display: flex;
+  width:600px;
+  height:auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; 
+}
+
+
+#challengeContainer {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#startButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f9c18; 
+  color: #fff;
+  cursor: pointer;
+}
+
+#startButton:hover,#buttonSubmit:hover  {
+  background-color: #06780d; 
+}
+
+/* Style pour le formulaire */
+form {
+  margin: 0 auto;
+  text-align: center; 
+  margin-bottom: 20px; 
+}
 
 form textarea{
-    Font-family: 'Fira Code'; 
-    width:300px;
-    font-size: medium;
-    height:auto;
+  Font-family: 'Fira Code'; 
+  width:650px;
+  font-size: medium;
+  height:auto;
 
 }
 
 #correctAnswer2{
-    Font-family: 'Fira Code'; 
-    width:300px;
-    height:auto;
+  Font-family: 'Fira Code'; 
+  width:500px;
+  height:auto;
 }
 
 form label {
-    font-family: 'Fira Code'; 
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  
-
-  
-  /* Style pour les boutons */
-  #buttons {
-    text-align: center;
-    padding-top: 20px;
-  }
-  #buttons button,
-  #buttons input[type="submit"] {
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  #buttonSubmit {
-    background-color: #06780d;
-  }
-
-  #buttonReset {
-    background-color: #b30c0c;
-  }
-  
-  /* Style pour le timer */
-  #timer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
-  /* Style pour la zone de résultat */
-  #result {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  /* Style pour les messages de résultat */
-  #resultText {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Style pour le texte d'explication */
-  #explanation {
-    margin-top: 10px;
-  }
-  
-
-  @media screen and (max-width: 900px) {
+  font-family: 'Fira Code'; 
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
 
+#buttons {
+  text-align: center;
+  padding-top: 20px;
+}
+#buttons button,
+#buttons input[type="submit"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
 
-  }
+#buttonSubmit {
+  background-color: #0f9c18;
+}
+#buttonReset:hover {
+  background-color: #b30c0c;
+}
+
+#buttonReset {
+  background-color: #df2d2d;
+}
+
+
+#timer {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: 'Press Start 2P';
+}
+
+
+#result {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+#resultText {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Press Start 2P';
+}
+
+
+#explanation {
+  margin-top: 10px;
+}
+
+
