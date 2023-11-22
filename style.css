@@ -1,30 +1,36 @@
 @media screen and (max-width: 1000px) {
-  #sentence{
-    font-size: 30px !important;
-  }
-  #result{
+  #sentence {
     font-size: 30px !important;
   }
 
-  h2{
+  #result {
+    font-size: 30px !important;
+  }
+
+  h2 {
     font-size: 28px !important;
   }
-  #timer{
+
+  #timer {
     font-size: 26px !important;
   }
-  form label {
-  font-size:28px !important;
-}
-  
 
-  #resultText{
+  form label {
+    font-size: 28px !important;
+  }
+
+
+  #resultText {
     font-size: 24px !important;
   }
+
   #correctAnswer2 {
     font-size: 20px !important;
   }
 
-  #startButton,#buttonSubmit,#buttonReset {
+  #startButton,
+  #buttonSubmit,
+  #buttonReset {
     font-size: 30px !important;
   }
 }
@@ -33,7 +39,7 @@ body {
   font-family: Sora;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #E73E8D, #0094D9); 
+  background: linear-gradient(to right, #E73E8D, #0094D9);
   color: #333;
 }
 
@@ -44,10 +50,10 @@ body {
   padding: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 800px; 
-  margin: auto; 
-  box-sizing: border-box; 
-  margin-top: 50px; 
+  max-width: 800px;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 15px;
 }
@@ -60,14 +66,15 @@ h2 {
   font-family: 'Press Start 2P';
 }
 
-#sentence, #explanation {
+#sentence,
+#explanation {
   display: flex;
-  width:600px;
-  height:auto;
+  width: 600px;
+  height: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 20px auto; 
+  margin: 20px auto;
 }
 
 
@@ -87,38 +94,39 @@ h2 {
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #0f9c18; 
+  background-color: #0f9c18;
   color: #fff;
   cursor: pointer;
 }
 
-#startButton:hover,#buttonSubmit:hover  {
-  background-color: #06780d; 
+#startButton:hover,
+#buttonSubmit:hover {
+  background-color: #06780d;
 }
 
 /* Style pour le formulaire */
 form {
   margin: 0 auto;
-  text-align: center; 
-  margin-bottom: 20px; 
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-form textarea{
-  Font-family: 'Fira Code'; 
-  width:650px;
+form textarea {
+  Font-family: 'Fira Code';
+  width: 650px;
   font-size: medium;
-  height:auto;
+  height: auto;
 
 }
 
-#correctAnswer2{
-  Font-family: 'Fira Code'; 
-  width:500px;
-  height:auto;
+#correctAnswer2 {
+  Font-family: 'Fira Code';
+  width: 500px;
+  height: auto;
 }
 
 form label {
-  font-family: 'Fira Code'; 
+  font-family: 'Fira Code';
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -130,6 +138,7 @@ form label {
   text-align: center;
   padding-top: 20px;
 }
+
 #buttons button,
 #buttons input[type="submit"] {
   padding: 8px 16px;
@@ -144,6 +153,7 @@ form label {
 #buttonSubmit {
   background-color: #0f9c18;
 }
+
 #buttonReset:hover {
   background-color: #b30c0c;
 }
@@ -177,5 +187,3 @@ form label {
 #explanation {
   margin-top: 10px;
 }
-
-
