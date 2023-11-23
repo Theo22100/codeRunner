@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Challenge</title>
+  <title>CodeRunner</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +14,23 @@
 </head>
 
 <body>
-
+  <!--  
+  /////////////////////////////////////////////////////////////////////
+  //                                                                 //
+  //                                                                 //
+  //                  IT'S NOT RIGHT TO CHEAT :(                     //
+  //                                                                 //
+  //                                                                 //
+  /////////////////////////////////////////////////////////////////////
+  -->
   <?php
-  require 'connection.php';
   $ID_Quest = $_GET['id'];
+  require 'connection.php';
+  
   require 'data.php';
   ?>
-  <div id="test">
+  <div id="container">
+      <img src="logo.png" alt="Logo CodeRunner"></img>
     <h2>The Challenge
       <?php echo $htmlcss; ?> :
     </h2>
@@ -87,10 +98,12 @@
 
 
 
-
+    //Answer
     function checkAnswer() {
       const userAnswer = document.getElementById("questCode").value.toLowerCase().replace(/\s/g, '');
-      const correctAnswer = <?php echo json_encode(strtolower($correctAnswer)); ?>.replace(/\s/g, '');
+      const correctAnswer = <?php echo json_encode(strtolower($correctAnswer)); ?>.replace(/\s/g, '').replace(/&gt;/g, '>').replace(/&lt;/g, '<');
+      console.log(correctAnswer);
+      console.log(userAnswer);
 
       if (userAnswer === correctAnswer) {
         showResult(true);
@@ -124,9 +137,9 @@
       resultDiv.style.display = "block";
 
       if (isCorrect) {
-        resultText.textContent = "Congratulations! You have found the correct answer";
+        resultText.innerHTML = "Congratulations! The answer is <span class='correct'>CORRECT</span>.";
       } else {
-        resultText.textContent = "Sorry, the answer is incorrect.";
+        resultText.innerHTML = "Sorry, the answer is <span class='incorrect'>INCORRECT</span>.";
       }
       correctAnswerElem1.textContent = "The answer is :";
 
@@ -134,7 +147,7 @@
 
 
 
-      explanationElem.innerHTML = "Explication :  <?php echo $explication; ?>";
+      explanationElem.innerHTML = "<div><span class='underline'>Explanation :</span>  <?php echo $explication; ?></div>";
 
 
       document.getElementById("challengeForm").style.display = "none";
