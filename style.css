@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
   #sentence {
-    font-size: 30px !important;
+    font-size: 38px !important;
+    
   }
 
   #result {
@@ -8,20 +9,26 @@
   }
 
   h2 {
-    font-size: 28px !important;
+    font-size: 36px !important;
   }
 
   #timer {
-    font-size: 26px !important;
-  }
-
-  form label {
     font-size: 28px !important;
   }
 
+  form label {
+    font-size: 34px !important;
+  }
+  
+  form textarea {
+    font-size: 34px !important;
+  }
+
+
 
   #resultText {
-    font-size: 24px !important;
+    font-size: 28px !important;
+
   }
 
   #correctAnswer2 {
@@ -32,6 +39,12 @@
   #buttonSubmit,
   #buttonReset {
     font-size: 30px !important;
+    padding: 40px 60px !important;
+    border-radius: 20px !important;
+  }
+  
+  #correctAnswer1{
+      font-size:38px !important;
   }
 }
 
@@ -43,11 +56,17 @@ body {
   color: #333;
 }
 
-#test {
+img {
+  max-width: 100%; 
+}
+
+#container {
   display: flex;
+  flex-direction: column; 
+  align-items: center; 
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #000000;
-  padding: 20px;
+  padding: 10px;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 800px;
@@ -62,7 +81,6 @@ body {
 
 h2 {
   text-align: center;
-  padding: 10px 0px;
   font-family: 'Press Start 2P';
 }
 
@@ -97,6 +115,7 @@ h2 {
   background-color: #0f9c18;
   color: #fff;
   cursor: pointer;
+  font-family: 'Press Start 2P';
 }
 
 #startButton:hover,
@@ -104,7 +123,7 @@ h2 {
   background-color: #06780d;
 }
 
-/* Style pour le formulaire */
+
 form {
   margin: 0 auto;
   text-align: center;
@@ -121,8 +140,10 @@ form textarea {
 
 #correctAnswer2 {
   Font-family: 'Fira Code';
-  width: 500px;
+  width: 650px;
   height: auto;
+  padding: 5px;
+  margin-bottom: 20px;
 }
 
 form label {
@@ -152,6 +173,7 @@ form label {
 
 #buttonSubmit {
   background-color: #0f9c18;
+  font-family: 'Press Start 2P';
 }
 
 #buttonReset:hover {
@@ -160,13 +182,14 @@ form label {
 
 #buttonReset {
   background-color: #df2d2d;
+  font-family: 'Press Start 2P';
 }
 
 
 #timer {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 16px;
   font-family: 'Press Start 2P';
 }
 
@@ -186,4 +209,17 @@ form label {
 
 #explanation {
   margin-top: 10px;
+}
+
+.correct{
+    color:green;
+}
+.incorrect{
+    color:red;
+}
+
+.underline {
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
